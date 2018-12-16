@@ -1,4 +1,4 @@
-# 基于优先级的非抢占/抢占进程调度算法模拟程序
+# 基于动态分区算法（FF，BF，WF）的内存分配模拟程序
 
 ### 作者：vili &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 联系方式：1976763043@qq.com
 
