@@ -1,0 +1,283 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "已分配分区表"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 285
+					"y": 300
+					"width": 255
+					"height": 40
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "空闲分区表"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 285
+					"y": 0
+					"width": 255
+					"height": 37
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane3"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "freeMemoryTable"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 285
+					"y": 40
+					"height": 260
+					"width": 255
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel3"
+					"border": new javax.swing.border.EtchedBorder( 1, null, null )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "allocationComBox"
+						"visible": false
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 120
+						"y": 5
+						"width": 130
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "分配算法："
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 24 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 5
+						"width": 120
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "释放进程名称："
+						"horizontalAlignment": 4
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 395
+						"height": 45
+						"width": 140
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "retMemoryBegJFT"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 145
+						"y": 395
+						"height": 45
+						"width": 84
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "returnBtn"
+						"text": "返还"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 245
+						"y": 395
+						"height": 45
+						"width": 70
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "初始内存："
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 24 )
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 85
+						"height": 55
+						"width": 120
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "initMenoryJFT"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 24 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 135
+						"y": 85
+						"height": 55
+						"width": 95
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "initMemoryBtn"
+						"text": "初始化"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 235
+						"y": 85
+						"width": 80
+						"height": 55
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel2"
+						"border": new javax.swing.border.EtchedBorder( 1, null, null )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "申请内存:"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 90
+							"width": 135
+							"height": 65
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "进程名:"
+							"horizontalAlignment": 4
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 10
+							"width": 135
+							"height": 65
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "processNameJFT"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 165
+							"y": 10
+							"width": 100
+							"height": 55
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "reqMemorySizeJFT"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 165
+							"y": 100
+							"height": 55
+							"width": 100
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "applyBtn"
+							"text": "申请"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 65
+							"y": 175
+							"width": 175
+							"height": 50
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 10
+						"y": 155
+						"height": 230
+						"width": 305
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "resetBtn"
+						"text": "重置"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 90
+						"y": 490
+						"height": 50
+						"width": 140
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "FFBtn"
+						"text": "首次适应"
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 35
+						"width": 100
+						"height": 50
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "BFBtn"
+						"text": "最佳适应"
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 100
+						"height": 50
+						"x": 115
+						"y": 35
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "WFBtn"
+						"text": "最坏适应"
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 100
+						"height": 50
+						"x": 225
+						"y": 35
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 550
+					"y": 40
+					"height": 555
+					"width": 328
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane4"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "curMemoryTable"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 285
+					"y": 340
+					"height": 260
+					"width": 255
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "操作面板"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 545
+					"y": 0
+					"width": 330
+					"height": 42
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "canvas"
+					"foreground": sfield java.awt.Color white
+					"background": sfield java.awt.Color white
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+					"height": 600
+					"width": 280
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 15
+				"height": 600
+				"width": 885
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 930, 665 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 681 )
+		} )
+	}
+}
