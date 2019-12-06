@@ -1,10 +1,8 @@
 # 基于动态分区算法（FF，BF，WF）的内存分配模拟程序
 
-**作者：vili &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：vili_wzl@126.com**
+**作者：积极向上小木木 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：PositiveMumu@126.com**
 
 *基于动态分区算法的内存分配模拟程序，包括首次适应算法，最佳适应算法、最坏适应算法。*
-
-[TOC]
 
 ## 一、项目功能
 1. 提供三种动态分区模拟算法：首次适应算法，最佳适应算法，最坏适应算法。
